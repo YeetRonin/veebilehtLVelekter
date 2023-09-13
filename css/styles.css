@@ -678,7 +678,7 @@ footer {
   }
   .services-flex-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
@@ -688,7 +688,6 @@ footer {
   
   .teenused-container {
     position: relative;
-    top: -150px;
   }
   
   .teenused-text {
@@ -701,7 +700,6 @@ footer {
     font-size: 16px; /* Adjust the font size for the highlighted text */
   }
   .teenused-container {
-    margin-top: 140px;
     transition: none;
     transform: none;
     scale: 1;
@@ -714,7 +712,6 @@ footer {
   
   #related-description {
     position: relative;
-    top: 400px;
     font-size: small;
   }
   
