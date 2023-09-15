@@ -933,6 +933,7 @@ footer {
   }
   .teenused-header{
    text-align: center;
+   align-items: center;
    margin: 0;
    padding-left: 0px;
    font-size: 1.35em;
@@ -997,9 +998,9 @@ footer {
     height: 140px;
     width: 240px;
     margin-top: -20px; 
-    margin-bottom: -600px;
+    margin-bottom: -700px;
     padding-right: 10px;
-    font-size: 0.60em;
+    font-size: 0.30em;
     text-align: left;
     margin-right: 200px;
   }
@@ -1010,7 +1011,7 @@ footer {
     width: 200px;
     margin-top: 100px;
     text-align: right;
-    margin-left: 200px; /* Adjust the margin-right as needed */
+    margin-left: 175px; /* Adjust the margin-right as needed */
     padding-left: 10px;
   }
   #phone-number::before {
