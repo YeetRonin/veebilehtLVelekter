@@ -301,31 +301,44 @@ section#avaleht {
   padding-bottom: 55px;
 }
 
+.services-section {
+  background-color: #F1F1F1;
+  padding: 50px;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
 .services-flex-container {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: center; /* Center the contents horizontally */
+  align-items: center;
 }
 
-#related-description,
-#related-image {
+.related-content {
   flex: 1;
-  height: 400px;
-  width: 200px;
+  padding: 10px;
+  text-align: right;
+  margin: 1px;
+}
+#related-image,
+#data-image {
+  height: 500px;
+  width: 500px;
+  margin-top: 10px;
   text-align: center;
-  vertical-align: middle;
-  border-radius: 15px;
-}
-
-#related-image {
+  padding-bottom: 0px;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+  border-radius: 5px;
 }
-#related-description{
-  font-size: 1.5em;
-  padding: 20px;
-  background: linear-gradient(rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.7));
+#data-description,
+#related-description {
+  width: 425px;
+  height: 325px;
+  margin: 10px;
 }
 .highlight1 {
   color: blue;
@@ -338,6 +351,9 @@ section#avaleht {
   padding: 20px;
   text-align: center;
   margin: 20px;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
 }
 .teenused-container:hover{
   scale: 1.05;
@@ -662,71 +678,95 @@ footer {
   }
   #teenused {
     background-color: #F1F1F1;
-    padding: 0px;
+    padding: 110px;
     margin: 0px 0;
     font-size: 1.5em;
     text-align: center;
   }
-  .teenused-header {
-    font-size: 1.5em;
-    padding: 20px;
-  }
-  .teenused-intro {
-    font-size: 1em;
-    padding: 10px;
-    padding-bottom: 10px;
+  .teenused-header{
+   text-align: center;
+   margin: 0;
+   padding-left: 0px;
+   margin-left: -60px;
+   font-size: 1.35em;
+   white-space: nowrap;
   }
   .services-flex-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Adjust as needed */
     align-items: center;
+    text-align: center;
+  }
+  .teenused-intro {
+    font-size: 0.9em;
+    padding: 0px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+   
+    
   }
   .teenused-text li {
-    padding: 40px;
-  }
-  
-  .teenused-container {
-    position: relative;
-    top: -150px;
+    padding: 0px;
   }
   
   .teenused-text {
-    font-size: 0.9em; /* Reduce font size */
-    padding: 10px; /* Adjust padding */
-    text-align: left; /* Align the text to the left */
+    font-size: 0.9em;
+    padding: 10px;
+    text-align: left;
+  }
+  .teenused-text li:last-child{
+    padding-bottom: 0px;
+    margin-bottom: 0;
   }
   
   .teenused-text .highlight1 {
-    font-size: 16px; /* Adjust the font size for the highlighted text */
+    font-size: 16px;
   }
+  
   .teenused-container {
-    margin-top: 140px;
-    transition: none;
-    transform: none;
-    scale: 1;
-  }
-  .teenused-container:hover {
-    transition: none;
-    transform: none;
-    scale: 1;
-  }
-  
-  #related-description {
     position: relative;
-    top: 400px;
-    font-size: small;
+    top: 100px;
+    z-index: 1;
+    transition: none;
+    transform: none;
+    padding-bottom: 0px;
+    margin-top: 0px;
   }
   
-  #related-image {
-    width: 50%;
-    margin-top: 10px;
-  }
-  
-
   .teenused-container:hover {
     transition: none;
     transform: none;
     scale: 1;
   }
+  .teenused-intro{
+    margin-top: 30px;
+    margin-bottom: 420px;
+  }
+  
+  #related-description,
+  #data-description {
+    height: 140px;
+    width: 240px;
+    margin-top: -20px; 
+    margin-bottom: -660px;
+    padding-right: 10px;
+    font-size: 15px;
+    text-align: left;
+    margin-right: 200px;
+    font-size: 23px;
+  }
+  
+  #related-image,
+  #data-image {
+    height: 200px;
+    width: 200px;
+    margin-top: 150px;
+    text-align: right;
+    margin-left: 250px; /* Adjust the margin-right as needed */
+    padding-left: 10px;
+  }
+  
 }
