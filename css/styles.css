@@ -1009,5 +1009,8 @@ footer {
     margin-left: 250px; /* Adjust the margin-right as needed */
     padding-left: 10px;
   }
-
+  #phone-number::before {
+    content: "Telefon:";
+    display: block;
+  }
 }
