@@ -1041,6 +1041,6 @@ footer {
     padding-top: 270px;
     padding-left: 15px; 
     margin-left: 5px; /* Add a 5px margin to the left */
-    margin-right: 180px; /* Remove right margin to let it wrap around the image */
+    margin-right: 185px; /* Remove right margin to let it wrap around the image */
   }
 }
