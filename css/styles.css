@@ -927,7 +927,6 @@ footer {
   }
   #teenused {
     background-color: #F1F1F1;
-    padding: 110px;
     margin: 0px 0;
     font-size: 1.5em;
     text-align: center;
@@ -997,12 +996,11 @@ footer {
   
   #related-description,
   #data-description {
-    height: 140px;
-    width: 240px;
-    margin-top: -20px; 
-    margin-bottom: -1000px;
+    height: 200px;
+    width: 200px;
+    margin-bottom: -800px;
     padding-right: 10px;
-    font-size: 0.45em;
+    font-size: 0.75em;
     text-align: left;
     margin-right: 200px;
   }
