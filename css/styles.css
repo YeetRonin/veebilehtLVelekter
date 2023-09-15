@@ -991,7 +991,7 @@ footer {
   }
   .teenused-intro{
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   
   #related-description,
@@ -999,9 +999,9 @@ footer {
     height: 140px;
     width: 240px;
     margin-top: -20px; 
-    margin-bottom: -400px;
+    margin-bottom: -1000px;
     padding-right: 10px;
-    font-size: 0.30em;
+    font-size: 0.45em;
     text-align: left;
     margin-right: 200px;
   }
