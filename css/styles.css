@@ -360,13 +360,13 @@ section#avaleht {
   width: 425px;
   height: 325px;
   margin: 10px;
+  padding-bottom: 400px;
 }
 .highlight1 {
   color: blue;
 }
 
 .teenused-container {
-  border: 1px solid black;
   border-radius: 20px;
   list-style: none;
   padding: 20px;
