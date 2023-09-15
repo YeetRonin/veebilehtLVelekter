@@ -1034,13 +1034,13 @@ footer {
     width: 200px;
     height: 325px;
     margin: 0px;
-    padding-bottom: 90px;
+    padding-bottom: 95px;
     font-size: 0.70em;
     position: absolute;
     text-align: left;
     padding-top: 270px;
     padding-left: 15px; 
     margin-left: 5px; /* Add a 5px margin to the left */
-    margin-right: 145px; /* Remove right margin to let it wrap around the image */
+    margin-right: 115px; /* Remove right margin to let it wrap around the image */
   }
 }
