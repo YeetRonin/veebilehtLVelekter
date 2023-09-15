@@ -908,6 +908,7 @@ footer {
     width: calc(48% - 5px);
     text-align: center;
     margin-bottom: 10px; /* Add some spacing between items */
+    user-select: none;
   }
 
   /* Adjust the styles for the highlighting text */
