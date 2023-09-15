@@ -889,7 +889,9 @@ footer {
     padding-top: 10px;
     font-weight: 500;
   }
-  
+  .meist-sisene-text {
+    font-size: 0.75em;
+  }
   /* Use Flexbox to create a row with two items */
   .meist-container {
     display: flex;
