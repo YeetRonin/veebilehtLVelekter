@@ -1019,14 +1019,14 @@ footer {
   
   #related-image,
   #data-image {
-    height: 160px;
-    width: 160px;
+    height: 200px;
+    width: 180px;
     min-width: 100px;
     max-width: 300px;
     margin-top: 0px;
     float: right; /* Float the image to the right */
-    margin-left: 250px;
-    margin-bottom: 20px;
+    margin-left: 220px;
+    margin-bottom: 60px;
   }
   
   #data-description,
@@ -1038,7 +1038,7 @@ footer {
     font-size: 0.75em;
     position: absolute;
     text-align: left;
-    padding-top: 280px;
+    padding-top: 260px;
     padding-right: 5px; /* Add a 5px padding to the right */
     margin-left: 5px; /* Add a 5px margin to the left */
     margin-right: 150px; /* Remove right margin to let it wrap around the image */
