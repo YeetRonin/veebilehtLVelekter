@@ -938,6 +938,7 @@ footer {
    margin: 0;
    padding-left: 0px;
    font-size: 1.35em;
+   padding: -35px;
   }
   .services-flex-container {
     display: flex;
