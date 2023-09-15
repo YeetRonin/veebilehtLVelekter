@@ -563,7 +563,7 @@ footer {
   padding-bottom: 20px;
   color: white;
 }
-@media (min-width:380px) and (max-width:768px){
+@media (min-width:481px) and (max-width:768px){
   .hamburger{
     display: block;
     top: 10px;
@@ -787,4 +787,227 @@ footer {
     padding-left: 10px;
   }
   
+}
+@media (min-width:320px) and (max-width:480px){
+  .hamburger{
+    display: block;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #212121;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
+  }
+.navbar-item{
+  margin: 16px 0;
+}
+  .navbar-menu.active{
+    left: 0;
+    background-color: #212121;
+  }
+  .fb-logo i.fab.fa-facebook-f,
+  .ig-logo i.fab.fa-instagram {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  *{
+    font-size: 1em;
+  }
+  #avaleht{
+    font-size: 0.9em;
+  }
+  .avaleht-h1{
+    font-size: 3.2em;
+    text-align: center;
+  }
+  .avaleht-h2{
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .text-avaleht{
+    font-size: 1.5.em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .button{
+    padding: 10px 40px;
+    font-size: 1.5em;
+    border-radius: 20px;
+    margin-top: 1em;
+    background: linear-gradient(rgb(25, 44, 255),rgb(48, 231, 237));
+    color: white;
+    display: inline-block;
+    text-align: center;
+    position: relative; /* set position to relative to allow absolute positioning of pseudo-element */
+    border: none;
+    outline: none;
+    isolation: isolate;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .section-header-meist{
+    font-size: 2.5em;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .meist-header2{
+    padding-left: 20px;
+    font-size: 0.9em;
+    text-align: center;
+  }
+  .text-meist {
+    padding-left: 20px;
+    font-size: 0.8em;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: 500;
+  }
+  
+  /* Use Flexbox to create a row with two items */
+  .meist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 0.8em;
+  }
+  
+  /* Each item should take up 48% of the width (to allow for a small gap) */
+  .meist-item {
+    width: calc(48% - 5px);
+    text-align: center;
+    margin-bottom: 10px; /* Add some spacing between items */
+  }
+
+  /* Adjust the styles for the highlighting text */
+  .meist-item:hover {
+    transform: scale(1.05);
+    transition: all 0.9s ease;
+    animation: paint 1s linear infinite;
+    background: linear-gradient(rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.7));
+    border-radius: 20px;
+  }
+
+  /* Highlight text on hover */
+  .meist-item:hover .highlight {
+    color: blue; /* Change to your preferred color */
+    transition: color 0.5s ease;
+  }
+  #teenused {
+    background-color: #F1F1F1;
+    padding: 110px;
+    margin: 0px 0;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .teenused-header{
+   text-align: center;
+   margin: 0;
+   padding-left: 0px;
+   font-size: 1.35em;
+  }
+  .services-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Adjust as needed */
+    align-items: center;
+    text-align: center;
+  }
+  .teenused-intro {
+    font-size: 0.9em;
+    padding: 0px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+   
+    
+  }
+  .teenused-text li {
+    padding: 0px;
+  }
+  
+  .teenused-text {
+    font-size: 0.7em;
+    padding: 10px;
+    text-align: left;
+  }
+  .teenused-text li:last-child{
+    padding-bottom: 0px;
+    margin-bottom: 0;
+  }
+  
+  .teenused-text .highlight1 {
+    font-size: 16px;
+  }
+  
+  .teenused-container {
+    position: relative;
+    top: 100px;
+    z-index: 1;
+    transition: none;
+    transform: none;
+    padding-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+  .teenused-container:hover {
+    transition: none;
+    transform: none;
+    scale: 1;
+  }
+  .teenused-intro{
+    margin-top: 30px;
+    margin-bottom: 420px;
+  }
+  
+  #related-description,
+  #data-description {
+    height: 140px;
+    width: 240px;
+    margin-top: -20px; 
+    margin-bottom: -660px;
+    padding-right: 10px;
+    font-size: 15px;
+    text-align: left;
+    margin-right: 200px;
+    font-size: 23px;
+  }
+  
+  #related-image,
+  #data-image {
+    height: 200px;
+    width: 200px;
+    margin-top: 150px;
+    text-align: right;
+    margin-left: 250px; /* Adjust the margin-right as needed */
+    padding-left: 10px;
+  }
+
 }
