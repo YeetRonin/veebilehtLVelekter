@@ -887,7 +887,7 @@ footer {
   }
   .text-meist {
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 10px;
     font-size: 0.8em;
     text-align: left;
     padding-bottom: 10px;
@@ -1027,9 +1027,5 @@ footer {
     text-align: right;
     margin-left: 160px; /* Adjust the margin-right as needed */
     padding-left: 10px;
-  }
-  #phone-number::before {
-    content: "Telefon:";
-    display: block;
   }
 }
