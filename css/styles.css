@@ -996,10 +996,9 @@ footer {
     margin-top: -20px; 
     margin-bottom: -660px;
     padding-right: 10px;
-    font-size: 15px;
+    font-size: 0.75;
     text-align: left;
     margin-right: 200px;
-    font-size: 23px;
   }
   
   #related-image,
