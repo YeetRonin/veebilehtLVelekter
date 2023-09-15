@@ -925,6 +925,16 @@ footer {
     color: blue; /* Change to your preferred color */
     transition: color 0.5s ease;
   }
+  .meist-item:last-child p {
+    padding-right: 0px; /* Adjust as needed */
+  }
+  .meist-item:last-child {
+    margin-right: 0; /* Reset the margin for the last child */
+  }
+  
+  .meist-item:last-child:hover {
+    margin-right: 0px; /* Increase margin to push it out slightly */
+  }
   #teenused {
     background-color: #F1F1F1;
     margin: 0px 0;
@@ -982,6 +992,7 @@ footer {
     transform: none;
     padding-bottom: 0px;
     margin-top: 0px;
+    padding-top: 400px;
   }
   
   .teenused-container:hover {
