@@ -249,6 +249,9 @@ section#avaleht {
   color: #0069da;
   transition: 0.3s ease-in-out;
 }
+.meist-sisene-text{
+  font-size: 0.75em;
+}
 .meist-item:hover {
   transform: scale(1.10);
   transition: all 0.9s ease;
@@ -279,7 +282,7 @@ section#avaleht {
 }
 
 .meist-item:last-child:hover {
-  margin-right: 35px; /* Increase margin to push it out slightly */
+  margin-right: 25px; /* Increase margin to push it out slightly */
 }
 
 .meist-icon {
@@ -994,9 +997,9 @@ footer {
     height: 140px;
     width: 240px;
     margin-top: -20px; 
-    margin-bottom: -660px;
+    margin-bottom: -600px;
     padding-right: 10px;
-    font-size: 0.75;
+    font-size: 0.60;
     text-align: left;
     margin-right: 200px;
   }
@@ -1005,9 +1008,9 @@ footer {
   #data-image {
     height: 200px;
     width: 200px;
-    margin-top: 150px;
+    margin-top: 125px;
     text-align: right;
-    margin-left: 250px; /* Adjust the margin-right as needed */
+    margin-left: 225px; /* Adjust the margin-right as needed */
     padding-left: 10px;
   }
   #phone-number::before {
