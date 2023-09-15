@@ -1038,9 +1038,9 @@ footer {
     font-size: 0.70em;
     position: absolute;
     text-align: left;
-    padding-top: 245px;
+    padding-top: 235px;
     padding-right: 5px; /* Add a 5px padding to the right */
     margin-left: 5px; /* Add a 5px margin to the left */
-    margin-right: 145px; /* Remove right margin to let it wrap around the image */
+    margin-right: 155px; /* Remove right margin to let it wrap around the image */
   }
 }
