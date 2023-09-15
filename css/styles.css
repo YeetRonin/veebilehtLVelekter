@@ -1011,7 +1011,7 @@ footer {
   #data-description {
     height: 200px;
     width: 180px;
-    margin-top: 800px;
+    margin-bottom: -200px;
     padding-right: 10px;
     padding-left: 10px;
     font-size: 0.75em;
