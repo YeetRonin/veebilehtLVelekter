@@ -994,7 +994,7 @@ footer {
     transform: none;
     padding-bottom: 0px;
     margin-top: 0px;
-    padding-top: 400px;
+    padding-top: 200px;
   }
   
   .teenused-container:hover {
@@ -1011,8 +1011,9 @@ footer {
   #data-description {
     height: 200px;
     width: 200px;
-    margin-bottom: -800px;
+    margin-bottom: -1000px;
     padding-right: 10px;
+    padding-left: 10px;
     font-size: 0.75em;
     text-align: left;
     margin-right: 200px;
