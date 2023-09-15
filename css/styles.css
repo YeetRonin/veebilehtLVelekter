@@ -223,6 +223,7 @@ section#avaleht {
   font-size: 2em;
   background: linear-gradient(rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.7)), url(../images/piltavaleht.jpg);
   background-size: cover;
+  padding-bottom: 50px;
 }
 .section-header-meist{
   font-size: 3.5em;
@@ -238,11 +239,15 @@ section#avaleht {
 }
 .text-meist{
   padding-left: 40px;
-  font-size: 0.9em;
+  font-size: 1em;
   text-align: left;
   padding-bottom: 20px;
   padding-top: 10px;
   font-weight: 500;
+}
+.text-meist:hover .highlight {
+  color: #0069da;
+  transition: 0.3s ease-in-out;
 }
 .meist-item:hover {
   transform: scale(1.10);
@@ -264,6 +269,17 @@ section#avaleht {
 .meist-item {
   width: 24%;
   text-align: center;
+  font-size: 1em;
+}
+.meist-item:last-child p {
+  padding-right: 30px; /* Adjust as needed */
+}
+.meist-item:last-child {
+  margin-right: 0; /* Reset the margin for the last child */
+}
+
+.meist-item:last-child:hover {
+  margin-right: 35px; /* Increase margin to push it out slightly */
 }
 
 .meist-icon {
@@ -275,13 +291,15 @@ section#avaleht {
 .meist-item p {
   margin-top: 0; /* Remove top margin */
   text-align: left;
-  padding-left: 20px;
+  padding-left: 30px;
+  padding-top: 20px;
 }
 
 /* Additional styles to move the first two items to the left */
 .first-item .meist-icon, .second-item .meist-icon {
   margin-left: -50px; /* Move a bit to the left */
 }
+
 #teenused {
   background-color: #F1F1F1;
   padding: 0px;
@@ -545,7 +563,7 @@ footer {
   padding-bottom: 20px;
   color: white;
 }
-@media (min-width:480px) and (max-width:768px){
+@media (min-width:380px) and (max-width:768px){
   .hamburger{
     display: block;
     top: 10px;
