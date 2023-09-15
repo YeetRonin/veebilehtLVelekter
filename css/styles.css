@@ -1011,7 +1011,7 @@ footer {
     width: 200px;
     margin-top: 100px;
     text-align: right;
-    margin-left: 170px; /* Adjust the margin-right as needed */
+    margin-left: 160px; /* Adjust the margin-right as needed */
     padding-left: 10px;
   }
   #phone-number::before {
