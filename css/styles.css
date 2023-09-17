@@ -236,6 +236,7 @@ section#avaleht {
 }
 .meist-header2{
   padding-left: 20px;
+  padding-bottom: 20px;
 }
 .text-meist{
   padding-left: 40px;
@@ -313,7 +314,7 @@ section#avaleht {
 
 .teenused-header {
   font-size: 3.5em;
-  padding: 40px;
+  padding: 10px;
 }
 
 .teenused-intro {
@@ -743,9 +744,7 @@ footer {
    text-align: center;
    margin: 0;
    padding-left: 0px;
-   margin-left: -60px;
-   font-size: 1.35em;
-   white-space: nowrap;
+   font-size: 2.35em;
   }
   .services-flex-container {
     display: flex;
@@ -1005,7 +1004,6 @@ footer {
    margin: 0;
    padding-left: 0px;
    font-size: 1.35em;
-   padding: -35px;
   }
   .services-flex-container {
     display: flex;
@@ -1093,6 +1091,6 @@ footer {
   }
   .text-footer{
     font-size: 0.8em;
-    padding-left: 5px;
+    padding-right: 5px;
   }
 }
