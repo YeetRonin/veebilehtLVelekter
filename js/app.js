@@ -120,12 +120,23 @@ $(document).ready(function() {
     });
   });
 
-  //send e-mail
-
-
-
-
-// 
+  //fix for phone navbar hover
+  document.addEventListener("DOMContentLoaded", function () {
+    const navbarItems = document.querySelectorAll(".navbar-item");
+  
+    navbarItems.forEach((item) => {
+      item.addEventListener("click", function () {
+        // Remove the 'active' class from all navbar items
+        navbarItems.forEach((navItem) => {
+          navItem.classList.remove("active");
+        });
+  
+        // Add the 'active' class to the clicked item
+        this.classList.add("active");
+      });
+    });
+  });
+  
 
 
   
