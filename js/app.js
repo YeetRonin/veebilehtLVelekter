@@ -122,29 +122,14 @@ $(document).ready(function() {
 
   //fix for phone navbar hover
   // Get the logo element
+// Get the logo element
 const logo = document.querySelector('#navbar-logo');
 
 // Add a click event listener to the logo
 logo.addEventListener('click', () => {
-  // Remove the 'active' class from the logo
-  logo.classList.remove('active');
+  // Toggle the 'active' class on the logo
+  logo.classList.toggle('active');
 });
-
-// Add click event listeners to the navbar items
-const navbarItems = document.querySelectorAll('.navbar-item');
-
-navbarItems.forEach((item) => {
-  item.addEventListener('click', () => {
-    // Remove the 'active' class from all navbar items
-    navbarItems.forEach((navItem) => {
-      navItem.classList.remove('active');
-    });
-
-    // Add the 'active' class to the clicked navbar item
-    item.classList.add('active');
-  });
-});
-  
 
 
   
