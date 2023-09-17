@@ -621,6 +621,7 @@ footer {
     text-align: center;
     transition: 0.3s;
     display: flex;
+    z-index: 1000;
   }
 .navbar-item{
   margin: 16px 0;
@@ -857,6 +858,7 @@ footer {
     text-align: center;
     transition: 0.3s;
     display: flex;
+    z-index: 1000;
   }
 .navbar-item{
   margin: 16px 0;
