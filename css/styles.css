@@ -566,6 +566,27 @@ footer {
   padding-bottom: 20px;
   color: white;
 }
+@media (min-width: 769px) and (max-width: 1540px){
+  #avaleht{
+    font-size: 1em;
+  }
+  .avaleht-h1{
+    font-size: 4.2em;
+    text-align: center;
+  }
+  .avaleht-h2{
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .text-avaleht{
+    font-size: 1.75em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 @media (min-width:481px) and (max-width:768px){
   .hamburger{
     display: block;
@@ -1042,5 +1063,8 @@ footer {
     padding-left: 15px; 
     margin-left: 5px; /* Add a 5px margin to the left */
     margin-right: 185px; /* Remove right margin to let it wrap around the image */
+  }
+  body {
+    overflow-x: hidden;
   }
 }
