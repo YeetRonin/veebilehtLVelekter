@@ -722,6 +722,16 @@ footer {
     color: blue; /* Change to your preferred color */
     transition: color 0.5s ease;
   }
+  .meist-item:last-child p {
+    padding-right: 30px; /* Adjust as needed */
+  }
+  .meist-item:last-child {
+    margin-right: 0; /* Reset the margin for the last child */
+  }
+  
+  .meist-item:last-child:hover {
+    margin-right: 5px; /* Increase margin to push it out slightly */
+  }
   #teenused {
     background-color: #F1F1F1;
     padding: 110px;
@@ -1081,5 +1091,8 @@ footer {
   body {
     overflow-x: hidden;
   }
-  
+  .text-footer{
+    font-size: 0.8em;
+    padding-left: 5px;
+  }
 }
