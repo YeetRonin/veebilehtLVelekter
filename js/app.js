@@ -121,6 +121,14 @@ $(document).ready(function() {
   });
 
 
+  const navbarMenu = document.querySelector('.navbar-menu');
+
+// Add this code where you want to enable the hover effect
+navbarMenu.classList.add('active');
+
+// Add this code where you want to disable the hover effect
+navbarMenu.classList.remove('active');
+
 
 
   

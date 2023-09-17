@@ -12,6 +12,7 @@ html, body {
   scroll-behavior: smooth;
   scroll-padding: var(--scroll-padding, 5rem);
 }
+
 ul {
   list-style-type: none;
 }
@@ -25,6 +26,9 @@ ul {
 }
 .main-header{
   background-color: black;
+}
+.main-nav{
+  z-index: 9999;
 }
 .main-nav ul{
   padding-top: 15px;
@@ -622,7 +626,7 @@ footer {
     text-align: center;
     transition: 0.3s;
     display: flex;
-    z-index: 1000;
+    z-index: 9999;
   }
 .navbar-item{
   margin: 16px 0;
@@ -630,6 +634,8 @@ footer {
   .navbar-menu.active{
     left: 0;
     background-color: #212121;
+    pointer-events: auto;
+   
   }
   .fb-logo i.fab.fa-facebook-f,
   .ig-logo i.fab.fa-instagram {
@@ -745,6 +751,7 @@ footer {
    margin: 0;
    padding-left: 0px;
    font-size: 2.35em;
+   
   }
   .services-flex-container {
     display: flex;
