@@ -120,16 +120,7 @@ $(document).ready(function() {
     });
   });
 
-  //fix for phone navbar hover
-  // Get the logo element
-// Get the logo element
-const logo = document.querySelector('#navbar-logo');
 
-// Add a click event listener to the logo
-logo.addEventListener('click', () => {
-  // Toggle the 'active' class on the logo
-  logo.classList.toggle('active');
-});
 
 
   

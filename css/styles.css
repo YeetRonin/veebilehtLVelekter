@@ -870,7 +870,16 @@ footer {
     margin-left: -15px;
     margin-right: -15px;
   }
-
+  .nav-logo,
+  .nav-logo:hover {
+    font-size: 1.7em !important;
+    text-align: left;
+    margin-left: 0;
+    position: fixed;
+    top: auto;
+    left: 10px;
+    transition: none;
+  }
   *{
     font-size: 1em;
   }
@@ -1070,4 +1079,5 @@ footer {
   body {
     overflow-x: hidden;
   }
+  
 }
