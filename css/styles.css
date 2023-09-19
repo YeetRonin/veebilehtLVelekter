@@ -17,13 +17,69 @@ ul {
   list-style-type: none;
 }
 #avaleht {
-  background: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* overlay */
-    url(../images/background-introduction.jpg); /* actual background image */
-  background-size: cover;  /* cover the entire section */
-  background-position: center;  /* center the background */
-  background-repeat: no-repeat;  /* do not repeat the image */
+  padding-top: 140px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dad9d9;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+.avaleht-header{
+  color: rgb(26, 26, 26);
+  padding-bottom: 40px;
+  font-size: 3.5em;
+}
+.avaleht-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.avaleht-box {
+  width: calc(20% - 20px); /* Adjust the width as needed */
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.avaleht-box:first-child{
+  margin-left: 30px;
+}
+.avaleht-box:last-child{
+  margin-right: 30px;
+}
+.avaleht-box h2 {
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+}
+
+.avaleht-box p {
+  font-size: 1rem;
+}
+.text-teenused{
+  text-align: left;
+}
+.avaleht-box:hover .highlight-teenused {
+  color: #1877F2;
+}
+
+.avaleht-box img {  
+  padding-top: 10px;
+  max-width: 100%;
+  height: 100%;
+}
+.avaleht-box:hover {
+  scale: 1.15;
+  transition: 0.7s ease-in-out;
+}
+
+
 .main-header{
   background-color: black;
 }
@@ -147,77 +203,67 @@ ul {
   left: 0;
   right: 0;
 }
+#paket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  max-width: 1200px;
+}
 
-
-section#avaleht {
-  height: 100vh;
+.paket-container {
+  width: calc(30% - 20px); /* Adjust the width as needed */
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #212121;
-  margin-top: 0;
-  margin-bottom: 0;
+  justify-content: space-between;
 }
 
-.avaleht-h1{
-  align-items: center;
-  font-size: 7em;
-  padding-top: 115px;
-  background: linear-gradient(to top,rgb(255, 213, 44),rgb(255, 31, 31));
-  -webkit-background-clip: text;
-  color: transparent;
-  margin-top: 0em; 
-}
-.avaleht-h2 {
-  font-size: 5.5em;
-  margin-top: 0.66em;
-  text-align: center;
-  background: linear-gradient(to top,rgb(53, 113, 252),rgb(48, 237, 158)); 
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.text-avaleht{
-  margin-top: 0.5em;
-  font-size: 2em;
-  text-align: center;
-  color: white;
-}
-.button{
-  padding: 20px 80px;
-  font-size: 2.5em;
-  border-radius: 20px;
-  margin-top: 2em;
-  background: linear-gradient(rgb(25, 44, 255),rgb(48, 231, 237));
-  color: white;
-  display: inline-block;
-  text-align: center;
-  position: relative; /* set position to relative to allow absolute positioning of pseudo-element */
-  border: none;
-  outline: none;
-  isolation: isolate;
-  overflow: hidden;
-  box-sizing: border-box;
-
-}
-.no-button-link{
-  text-decoration: none; 
-}
-.button::after {
-  content: ""; /* This is necessary for the pseudo-element to be generated. No actual content is inserted. */
-  position: absolute; /* Absolutely position it relative to the button */
-  background: linear-gradient(rgba(255, 213, 44, 0.889), rgba(255, 31, 31, 0.849));
-  inset: 0;
-  z-index: -1; /* Place it below the button text */
-  transform-origin: right;
-  scale: 0 1;
-  transition: scale 450ms;
-  border-radius: 20px; /* If you want a border-radius */
+.paket-box h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
-.button:hover::after,
-.button:focus-visible::after {
-  transform-origin: left;
-  scale: 1 1;
+.paket-box p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.paket-heading{
+  font-size: 3.5em;
+  padding-bottom: 15px;
+}
+.paket-text {
+  font-size: 1.75em;
+  text-align: left;
+  padding: 5px 25px; 
+  margin-right: 50px;
+  position: relative; 
+}
+.paket-text:last-child{
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.paket-text::before {
+  content: "\2714";
+  color: #0481e1;
+  font-weight: bold;
+  margin-right: 15px;
+  position: absolute; 
+  left: -10px; 
+}
+.paket-hind{
+  font-size: 3.5em;
+  background-color: #1a81fed6;
+  border: 1px solid #777674;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 #meist {
@@ -572,28 +618,7 @@ footer {
   color: white;
 }
 @media (min-width: 769px) and (max-width: 1540px){
-  #avaleht{
-    font-size: 1em;
-  }
-  .avaleht-h1{
-    font-size: 4.2em;
-    text-align: center;
-  }
-  .avaleht-h2{
-    font-size: 3.5em;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
-  }
-  .text-avaleht{
-    font-size: 1.75em;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .button-header{
-    font-size: 1.5em;
-  }
+  
 }
 @media (min-width:481px) and (max-width:768px){
   .hamburger{
@@ -641,204 +666,6 @@ footer {
   .ig-logo i.fab.fa-instagram {
     margin-left: -15px;
     margin-right: -15px;
-  }
-
-  *{
-    font-size: 1em;
-  }
-  #avaleht{
-    font-size: 0.9em;
-  }
-  .avaleht-h1{
-    font-size: 4.2em;
-    text-align: center;
-  }
-  .avaleht-h2{
-    font-size: 3.5em;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
-  }
-  .text-avaleht{
-    font-size: 2.em;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .button{
-    padding: 10px 40px;
-    font-size: 1.5em;
-    border-radius: 20px;
-    margin-top: 1em;
-    background: linear-gradient(rgb(25, 44, 255),rgb(48, 231, 237));
-    color: white;
-    display: inline-block;
-    text-align: center;
-    position: relative; /* set position to relative to allow absolute positioning of pseudo-element */
-    border: none;
-    outline: none;
-    isolation: isolate;
-    overflow: hidden;
-    box-sizing: border-box;
-  }
-  .section-header-meist{
-    font-size: 2.5em;
-    padding-top: 40px;
-    padding-bottom: 20px;
-  }
-  .meist-header2{
-    padding-left: 20px;
-    font-size: 0.9em;
-    text-align: center;
-  }
-  .text-meist {
-    padding-left: 20px;
-    font-size: 0.8em;
-    text-align: left;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-weight: 500;
-  }
-  
-  /* Use Flexbox to create a row with two items */
-  .meist-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-size: 0.8em;
-  }
-  
-  /* Each item should take up 48% of the width (to allow for a small gap) */
-  .meist-item {
-    width: calc(48% - 5px);
-    text-align: center;
-    margin-bottom: 10px; /* Add some spacing between items */
-  }
-
-  /* Adjust the styles for the highlighting text */
-  .meist-item:hover {
-    transform: scale(1.05);
-    transition: all 0.9s ease;
-    animation: paint 1s linear infinite;
-    background: linear-gradient(rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.7));
-    border-radius: 20px;
-  }
-
-  /* Highlight text on hover */
-  .meist-item:hover .highlight {
-    color: blue; /* Change to your preferred color */
-    transition: color 0.5s ease;
-  }
-  .meist-item:last-child p {
-    padding-right: 30px; /* Adjust as needed */
-  }
-  .meist-item:last-child {
-    margin-right: 0; /* Reset the margin for the last child */
-  }
-  
-  .meist-item:last-child:hover {
-    margin-right: 5px; /* Increase margin to push it out slightly */
-  }
-  #teenused {
-    background-color: #F1F1F1;
-    padding: 110px;
-    margin: 0px 0;
-    font-size: 1.5em;
-    text-align: center;
-  }
-  .teenused-header{
-   text-align: center;
-   margin: 0;
-   padding-left: 0px;
-   font-size: 2.35em;
-   
-  }
-  .services-flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Adjust as needed */
-    align-items: center;
-    text-align: center;
-  }
-  .teenused-intro {
-    font-size: 0.9em;
-    padding: 0px;
-    padding-bottom: 30px;
-    text-align: center;
-    margin-left: 0px;
-    margin-top: 0px;
-   
-    
-  }
-  .teenused-text li {
-    padding: 0px;
-  }
-  
-  .teenused-text {
-    font-size: 0.9em;
-    padding: 10px;
-    text-align: left;
-  }
-  .teenused-text li:last-child{
-    padding-bottom: 0px;
-    margin-bottom: 0;
-  }
-  
-  .teenused-text .highlight1 {
-    font-size: 16px;
-  }
-  
-  .teenused-container {
-    display: relative; /* Use flexbox to align the list and description */
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center items horizontally */
-    position: relative;
-    top: 1px;
-    z-index: 1;
-    transition: none;
-    transform: none;
-    padding-bottom: 0px;
-    margin-top: 0px;
-    white-space: nowrap;
-}
-  
-  .teenused-container:hover {
-    transition: none;
-    transform: none;
-    scale: 1;
-  }
-  .teenused-intro{
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  
-  
-
-  #related-image,
-  #data-image {
-    height: 300px;
-    width: auto;
-    min-width: 200px;
-    max-width: 400px;
-    margin-top: 0px;
-    float: right; /* Float the image to the right */
-    margin-left: 5px; /* Add a 5px margin to the left */
-    margin-left: 250px;
-  }
-  
-  #data-description,
-  #related-description {
-    width: 200px;
-    height: 325px;
-    margin: 10px;
-    padding-bottom: 100px;
-    font-size: 0.75em;
-    position: absolute;
-    text-align: left;
-    padding-top: 350px;
-    padding-right: 5px; /* Add a 5px padding to the right */
-    margin-left: 5px; /* Add a 5px margin to the left */
-    margin-right: 250px; /* Remove right margin to let it wrap around the image */
   }
 
   
@@ -898,206 +725,5 @@ footer {
     left: 10px;
     transition: none;
   }
-  *{
-    font-size: 1em;
-  }
-  #avaleht{
-    font-size: 0.9em;
-  }
-  .avaleht-h1{
-    font-size: 3.2em;
-    text-align: center;
-  }
-  .avaleht-h2{
-    font-size: 2.5em;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
-  }
-  .text-avaleht{
-    font-size: 1.5.em;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .button{
-    padding: 10px 40px;
-    font-size: 1.5em;
-    border-radius: 20px;
-    margin-top: 1em;
-    background: linear-gradient(rgb(25, 44, 255),rgb(48, 231, 237));
-    color: white;
-    display: inline-block;
-    text-align: center;
-    position: relative; /* set position to relative to allow absolute positioning of pseudo-element */
-    border: none;
-    outline: none;
-    isolation: isolate;
-    overflow: hidden;
-    box-sizing: border-box;
-  }
-  .section-header-meist{
-    font-size: 2.5em;
-    padding-top: 40px;
-    padding-bottom: 20px;
-  }
-  .meist-header2{
-    padding-left: 20px;
-    padding-bottom: 20px;
-    font-size: 0.9em;
-    text-align: center;
-  }
-  .text-meist {
-    padding-left: 20px;
-    padding-right: 10px;
-    font-size: 0.8em;
-    text-align: left;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-weight: 500;
-  }
-  .meist-sisene-text {
-    font-size: 0.75em;
-  }
-  /* Use Flexbox to create a row with two items */
-  .meist-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-size: 0.8em;
-  }
   
-  /* Each item should take up 48% of the width (to allow for a small gap) */
-  .meist-item {
-    width: calc(48% - 5px);
-    text-align: center;
-    margin-bottom: 10px; /* Add some spacing between items */
-    user-select: none;
-  }
-
-  /* Adjust the styles for the highlighting text */
-  .meist-item:hover {
-    transform: scale(1.05);
-    transition: all 0.9s ease;
-    animation: paint 1s linear infinite;
-    background: linear-gradient(rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.7));
-    border-radius: 20px;
-  }
-
-  /* Highlight text on hover */
-  .meist-item:hover .highlight {
-    color: blue; /* Change to your preferred color */
-    transition: color 0.5s ease;
-  }
-  .meist-item:last-child p {
-    padding-right: 0px; /* Adjust as needed */
-  }
-  .meist-item:last-child {
-    margin-right: 0; /* Reset the margin for the last child */
-  }
-  
-  .meist-item:last-child:hover {
-    margin-right: 0px; /* Increase margin to push it out slightly */
-  }
-  #teenused {
-    background-color: #F1F1F1;
-    margin: 0px 0;
-    font-size: 1.5em;
-    text-align: center;
-  }
-  .teenused-header{
-   text-align: center;
-   align-items: center;
-   margin: 0;
-   padding-left: 0px;
-   font-size: 1.35em;
-  }
-  .services-flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Adjust as needed */
-    align-items: center;
-    text-align: center;
-  }
-  .teenused-intro {
-    font-size: 0.9em;
-    padding: 0px;
-    padding-bottom: 30px;
-    text-align: center;
-    margin-left: 0px;
-    margin-top: 0px;
-   
-    
-  }
-  .teenused-text li {
-    padding: 0px;
-  }
-  
-  .teenused-text {
-    font-size: 0.7em;
-    padding: 10px;
-    text-align: left;
-  }
-  .teenused-text li:last-child{
-    padding-bottom: 0px;
-    margin-bottom: 0;
-  }
-  
-  .teenused-text .highlight1 {
-    font-size: 16px;
-  }
-  
-  .teenused-container {
-    position: relative;
-    
-    z-index: 1;
-    transition: none;
-    transform: none;
-    padding-bottom: 0px;
-    margin-top: 0px;
-  }
-  
-  .teenused-container:hover {
-    transition: none;
-    transform: none;
-    scale: 1;
-  }
-  .teenused-intro{
-    margin-top: 30px;
-    margin-bottom: 0px;
-  }
-  
-  #related-image,
-  #data-image {
-    height: 180px;
-    width: 180px;
-    min-width: 100px;
-    max-width: 300px;
-    margin-top: 0px;
-    float: right; /* Float the image to the right */
-    margin-left: 200px;
-    margin-bottom: 80px;
-  }
-  
-  #data-description,
-  #related-description {
-    width: 200px;
-    height: 325px;
-    margin: 0px;
-    padding-bottom: 95px;
-    font-size: 0.70em;
-    position: absolute;
-    text-align: left;
-    padding-top: 270px;
-    padding-left: 15px; 
-    margin-left: 5px; /* Add a 5px margin to the left */
-    margin-right: 185px; /* Remove right margin to let it wrap around the image */
-  }
-  body {
-    overflow-x: hidden;
-  }
-  .text-footer{
-    font-size: 0.8em;
-    padding-right: 5px;
-  }
 }
