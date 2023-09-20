@@ -218,10 +218,12 @@ ul {
   width: 100%;
   padding-bottom: 40px;
 }
-
 .paket-container {
   width: calc(30% - 20px);
-  background-color: #f0f0f0;
+  background-color: rgb(224, 224, 224);
+  background-image: url(../images/background-lightning.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
   border-radius: 5px;
   padding: 0px;
   margin-bottom: 20px;
@@ -234,9 +236,20 @@ ul {
   overflow: hidden;
   z-index: 1;
   transition: 0.7s ease-in-out;
-  position: relative; /* Add this line */
+  position: relative;
 }
-
+.paket-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(222, 222, 222, 0.954);
+  border-radius: 5px;
+  background-blend-mode: multiply;
+  pointer-events: none;
+}
 
 
 
@@ -270,11 +283,13 @@ ul {
   margin: 0;
 }
 .paket-text {
+  
   font-size: 1.75em;
   text-align: left;
   padding: 5px 35px; 
   margin-right: 50px;
   position: relative; 
+  
 }
 .paket-text:last-child{
   padding-bottom: 20px;
@@ -292,17 +307,23 @@ ul {
   position: absolute; 
   left: 5px; 
 }
-.paket-hind{
+.paket-hind {
   font-size: 3.5em;
-  background-color: #1a81fed6;
+  background-color: rgb(26, 129, 254); /* Adjust the alpha value (0.85) as needed */
   border: 1px solid #777674;
   border-radius: 5px;
   margin-top: 20px;
   width: 100%;
-.paket-hind-euro{
-  font-size: 0.75em;
-  padding-left: 0px;
+  display: inline-block;
+  padding: 10px; /* Add padding to the price container */
+  color: #fff;
+  z-index: 5;
 }
+
+.paket-hind-euro {
+  font-size: 0.65em;
+  display: inline-block;
+  z-index: 5;
 }
 
 
