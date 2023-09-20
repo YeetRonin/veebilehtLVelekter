@@ -71,6 +71,7 @@
     <!--Tood-->
     <section id="tood">
       <h2 class="tood-header">Meie hinnad</h2>
+      <p class="tood-sissejuhatus">Hind on umbkaudne ja võib varieeruda vastavalt objekti asukohale, selle eripäradele ning teistele tööga seotud kuludele.</p>
       <table class="pricing-table">
         <tr class="table-header">
           <th class="product-name">Teenused</th>
@@ -78,53 +79,53 @@
           <th class="product-price">Hind</th>
         </tr>
         <tr class="table-row">
-          <td class="product-name">Elektri pakett</td>
+          <td class="product-name">Kontsultatsioon</td>
+          <td class="product-description">Elektriku kohale kutsumine.</td>
+          <td class="product-price">50€</td>
+        </tr>
+        <tr class="table-row">
+          <td class="product-name">Pistikupesa paigaldus</td>
+          <td class="product-description">Pistikupesa väljavahetus või paigaldus.</td>
+          <td class="product-price">25€</td>
+        </tr>
+        <tr class="table-row">
+          <td class="product-name">Lüliti paigaldus</td>
+          <td class="product-description"> Lüliti väljavahetus või paigaldus.</td>
+          <td class="product-price">25€</td>
+        </tr>
+        <tr class="table-row">
+          <td class="product-name">Elektrikilbi tööd</td>
+          <td class="product-description"> Kaitsmete väljavahetus, ülevaatus, paigaldus.</td>
+          <td class="product-price">25€/h</td>
+        </tr>
+        <tr class="table-row">
+          <td class="product-name">Projekteerimine</td>
+          <td class="product-description"> Elektritööde projekteerimine.</td>
+          <td class="product-price">29€/h</td>
+        </tr>
+        <tr class="table-row">
+          <td class="product-name">Elektripliidi paigaldus</td>
+          <td class="product-description"> Elektripliidi paigaldus ja/või ühendamine.</td>
+          <td class="product-price">50€</td>
+        </tr>
+        <tr class="table-row">
+          <td class="product-name">Elektriboileri paigaldus</td>
+          <td class="product-description"> Elektriboileri paigaldus ja vajalike elektriühendamiste tegemine.</td>
+          <td class="product-price">50€</td>
+        </tr>
+        <tr class="table-row">
+          <td class="product-name">Elektrikerise paigaldus</td>
+          <td class="product-description">Saunakerise paigaldamine ja ühendamine</td>
+          <td class="product-price">60€</td>
+        </tr>
+        <tr class="table-row">
+          <td class="product-name">Lekkevoolukaitsme paigaldus</td>
           <td class="product-description">Pakett sisaldab elektrisüsteemide projekteerimist + kilpi ???</td>
-          <td class="product-price">500€</td>
-        </tr>
-        <tr class="table-row">
-          <td class="product-name">Elektri ja side pakett</td>
-          <td class="product-description">Pakett sisaldab elektrisüsteemide projekteerimist + kilpi + sidet ???</td>
-          <td class="product-price">1500€</td>
-        </tr>
-        <tr class="table-row">
-          <td class="product-name">Kontsultatsioon</td>
-          <td class="product-description"> Vaatame üle</td>
-          <td class="product-price">50€</td>
-        </tr>
-        <tr class="table-row">
-          <td class="product-name">Kontsultatsioon</td>
-          <td class="product-description"> Vaatame üle</td>
-          <td class="product-price">50€</td>
-        </tr>
-        <tr class="table-row">
-          <td class="product-name">Kontsultatsioon</td>
-          <td class="product-description"> Vaatame üle</td>
-          <td class="product-price">50€</td>
-        </tr>
-        <tr class="table-row">
-          <td class="product-name">Kontsultatsioon</td>
-          <td class="product-description"> Vaatame üle</td>
-          <td class="product-price">50€</td>
-        </tr>
-        <tr class="table-row">
-          <td class="product-name">Kontsultatsioon</td>
-          <td class="product-description"> Vaatame üle</td>
-          <td class="product-price">50€</td>
+          <td class="product-price">35€</td>
         </tr>
         <tr class="table-row">
           <td class="product-name">Elektri pakett</td>
-          <td class="product-description">Pakett sisaldab elektrisüsteemide projekteerimist + kilpi ???</td>
-          <td class="product-price">500€</td>
-        </tr>
-        <tr class="table-row">
-          <td class="product-name">Elektri pakett</td>
-          <td class="product-description">Pakett sisaldab elektrisüsteemide projekteerimist + kilpi ???</td>
-          <td class="product-price">500€</td>
-        </tr>
-        <tr class="table-row">
-          <td class="product-name">Elektri pakett</td>
-          <td class="product-description">Pakett sisaldab elektrisüsteemide projekteerimist + kilpi ???</td>
+          <td class="product-description">Pakett sisaldab elektrisüsteemide projekteerimist + kilbi skeemi</td>
           <td class="product-price">500€</td>
         </tr>
         <tr class="table-row">
@@ -247,9 +248,9 @@
         <div class="footer-content-center">
           <ul class="footer-links">
             <li><a href="#avaleht">Avaleht</a></li>
+            <li><a href="#tood">Tööd</a></li>
+            <li><a href="#paketid">Paketid</a></li>
             <li><a href="#meist">Meist</a></li>
-            <li><a href="#teenused">Teenused</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
           </ul>
         </div>
         
@@ -266,20 +267,5 @@
     <script src="tehtud-gallery.js"></script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendEmail(){
-        Email.send({
-            Host : "smtp.gmail.com",
-            Username : "aleks.traumann.004@gmail.com",
-            Password : "*********",
-            To : 'aleks.traumann.004@gmail.com',
-            From : document.getElementById("email").value,
-            Subject : "New Contact Form Enquiry",
-            Body : "Nimi: " + document.getElementById("first-name").value + "<br>Teema: " + document.getElementById("subject").value + "<br>Sõnum: " + document.getElementById("message").value + "<br>Gmail: " + document.getElementById("email").value + "<br>",
-        }).then(
-        message => alert("Aitäh! Teie sõnum on saadetud.")
-        );
-      }
-    </script>
 </body>
 </html>

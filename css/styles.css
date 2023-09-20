@@ -222,6 +222,7 @@ ul {
 .paket-container {
   width: calc(30% - 20px); /* Adjust the width as needed */
   background-color: #f0f0f0;
+  border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
   text-align: center;
@@ -229,7 +230,15 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: default;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.7s ease-in-out;
+  
 }
+
+
+
 
 .paket-box h2 {
   font-size: 1.5em;
@@ -284,7 +293,12 @@ ul {
 .tood-header{
   padding-top: 30px;
   font-size: 3.5em;
-  padding-bottom: 15px;
+  padding-bottom: 45px;
+}
+.tood-sissejuhatus{
+  font-size: 1.5em;
+  padding-bottom: 30px;
+  text-align: center;
 }
 .pricing-table {
   width: 90%;
@@ -302,7 +316,7 @@ ul {
 }
 
 .table-row td {
-  border: 1px solid #ccc;
+  border: 1px solid #aaaaaa;
   padding: 10px;
 }
 
@@ -322,7 +336,7 @@ ul {
 
 /* Style for alternating row colors */
 .table-row:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #02386439;
 }
 
 
