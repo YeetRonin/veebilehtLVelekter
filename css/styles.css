@@ -11,6 +11,7 @@ html, body {
   box-sizing: border-box;
   scroll-behavior: smooth;
   scroll-padding: var(--scroll-padding, 5rem);
+  height: 100%;
 }
 
 ul {
@@ -208,8 +209,12 @@ ul {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 20px auto;
-  max-width: 1200px;
+  margin: 0;
+  padding: 40px;
+  max-width: 2800px;
+  background-color: #ededed;
+  width: 100%;
+  min-height: 100vh; /* Use min-height to ensure it takes the full height */
 }
 .paket-header{
   font-size: 3.5em;
@@ -219,19 +224,17 @@ ul {
   padding-bottom: 40px;
 }
 .paket-container {
-  width: calc(30% - 20px);
+  width: 32%; /* Set the width to 22% */
   background-color: rgb(224, 224, 224);
   background-image: url(../images/background-lightning.jpg);
   background-blend-mode: multiply;
   background-size: cover;
   border-radius: 5px;
-  padding: 0px;
-  margin-bottom: 20px;
+  margin: 0; /* Set margin to 0 to eliminate extra spacing */
   text-align: center;
   border: 1px solid #ddd;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   cursor: default;
   overflow: hidden;
   z-index: 1;
@@ -272,6 +275,7 @@ ul {
   display: inline-block;
   color: #f2f3f5;
   margin: 0;
+  padding: 10px;
 }
 .paket-hind {
   font-size: 3.5em;
@@ -286,7 +290,7 @@ ul {
   
   font-size: 1.75em;
   text-align: left;
-  padding: 5px 35px; 
+  padding: 15px 45px; 
   margin-right: 50px;
   position: relative; 
   
@@ -333,6 +337,7 @@ ul {
 /* Add CSS styles to format the product list items */
 #tood {
   text-align: center;
+  background-color: #f2f3f5;
 }
 .tood-header{
   padding-top: 30px;
