@@ -73,7 +73,7 @@ ul {
 .avaleht-box img {  
   padding-top: 10px;
   max-width: 100%;
-  height: 100%;
+  height: 250px;
 }
 .avaleht-box:hover {
   scale: 1.15;
