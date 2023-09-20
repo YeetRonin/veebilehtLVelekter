@@ -220,7 +220,7 @@ ul {
 }
 
 .paket-container {
-  width: calc(30% - 20px); /* Adjust the width as needed */
+  width: calc(30% - 20px);
   background-color: #f0f0f0;
   border-radius: 5px;
   padding: 20px;
@@ -234,7 +234,7 @@ ul {
   overflow: hidden;
   z-index: 1;
   transition: 0.7s ease-in-out;
-  
+  position: relative; /* Add this line */
 }
 
 
@@ -252,7 +252,14 @@ ul {
 
 .paket-heading{
   font-size: 3.5em;
-  padding-bottom: 15px;
+  background-color: #0056b3;
+  border-radius: 5px;
+  position: relative;
+  padding: 0px;
+  display: inline-block;
+  color: #fff;
+  margin: 0;
+
 }
 .paket-text {
   font-size: 1.75em;
