@@ -1,0 +1,865 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  margin: 0;
+  padding-top: 0px;
+  font-size: 1em;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding: var(--scroll-padding, 5rem);
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+#avaleht {
+  padding-top: 140px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dad9d9;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.avaleht-header{
+  color: rgb(26, 26, 26);
+  padding-bottom: 40px;
+  font-size: 4.5em;
+}
+.avaleht-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.avaleht-box {
+  width: calc(20% - 20px); /* Adjust the width as needed */
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.avaleht-box:first-child{
+  margin-left: 30px;
+}
+.avaleht-box:last-child{
+  margin-right: 30px;
+}
+.avaleht-box h2 {
+  font-size: 2.35rem;
+  margin-bottom: 10px;
+}
+.avaleht-box p {
+  font-size: 1.35rem;
+  padding: 2px 20px;
+  
+}
+.text-teenused{
+  text-align: left;
+  width: 100%; /* Make sure the container takes up the full width */
+  max-width: 100%;
+}
+.avaleht-box:hover .highlight-teenused {
+  color: #1877F2;
+}
+
+.avaleht-box img {  
+  padding-top: 10px;
+  max-width: 100%;
+  height: 250px;
+}
+.avaleht-box:hover {
+  scale: 1.15;
+  transition: 0.7s ease-in-out;
+}
+
+
+.main-header{
+  background-color: black;
+}
+.main-nav{
+  z-index: 9999;
+}
+.main-nav ul{
+  padding-top: 15px;
+  margin:0;
+}
+.main-nav li{
+  display: inline;
+  padding-top: -20px;
+  padding: 0 1%;
+}
+.main-nav a {
+  display: inline-block;
+  padding: .5em;
+  padding-bottom: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+.nav-logo,
+.nav-logo:hover {
+  font-size: 1.7em !important;
+  text-align: left;
+  margin-left: 0;
+  position: fixed;
+  top: auto;
+  left: 10px;
+  transition: 0.7s ease;
+}
+.fa-gem {
+  margin-right: 0.5em;
+}
+.main-nav {
+  text-align: right;
+  font-size: 1.2em;
+  font-weight: lighter;
+  border-bottom: 1px solid #212121;
+  background-color: black;
+  position: fixed;
+  height: 70px;
+  width: 100%;
+}
+.symbol{
+  margin: 0;
+  padding: 0;
+  color: #1bf2ee;
+}
+.main-nav a:hover{
+  color: #1bf2ee;
+  transform: scale(1.15);
+}
+.navbar-link{
+  transition: 0.7s ease;
+}
+
+.fb-logo i.fab.fa-facebook-f,
+.ig-logo i.fab.fa-instagram {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+
+.fb-logo:hover i.fab.fa-facebook-f {
+  color: #1877F2;
+  transform: scale(1.45);
+  transition: 0.7s ease;
+}
+.instagram-logo:hover i.fab.fa-instagram {
+  color: #d62976;
+  transform: scale(1.45);
+  transition: 0.7s ease;
+}
+/* Hide the hamburger menu by default */
+.hamburger {
+  display: none;
+  position: absolute;
+
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+/* Existing .navbar-item and .navbar-link CSS */
+.navbar-item {
+  display: block;
+  text-align: center;
+  padding: 6px;
+  position: relative; /* set position to relative to allow absolute positioning of pseudo-element */
+}
+
+.navbar-link {
+  color: white;  /* or whatever color you have */
+  text-decoration: none;
+  position: relative;  /* this allows us to use absolute positioning for the pseudo-elements */
+}
+
+/* Add the ::before pseudo-element for the line */
+.navbar-link::before {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  right: 50%;
+  height: 1px;
+  background-color: #fff; /* or any color you prefer */
+  transition: all 0.5s ease-in-out;
+}
+
+/* Expand the line on hover */
+.navbar-link:hover::before {
+  left: 0;
+  right: 0;
+}
+#paket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 40px;
+  max-width: 2800px;
+  background-color: #ededed;
+  width: 100%;
+  min-height: 100vh; /* Use min-height to ensure it takes the full height */
+}
+.paket-header{
+  font-size: 4.5em;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 40px;
+}
+.paket-container {
+  width: 32%; /* Set the width to 22% */
+  background-color: rgb(224, 224, 224);
+  background-image: url(../images/background-lightning.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 0; /* Set margin to 0 to eliminate extra spacing */
+  text-align: center;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.7s ease-in-out;
+  position: relative;
+}
+
+.paket-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(222, 222, 222, 0.954);
+  border-radius: 5px;
+  background-blend-mode: multiply;
+  pointer-events: none;
+}
+
+
+
+.paket-box h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.paket-box p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.paket-heading {
+  font-size: 3em;
+  background-color: #0056b3;
+  border-radius: 5px 5px 0 0; /* Adjust the border-radius as needed */
+  position: relative;
+  padding: 10px 0px;
+  display: inline-block;
+  color: #f2f3f5;
+  margin: 0;
+  padding: 10px;
+}
+.paket-heading:last-child {
+  margin-bottom: 300px;
+}
+.paket-hind {
+  font-size: 3.5em;
+  background-color: #0056b3;
+  border-radius: 0 0 5px 5px; /* Adjust the border-radius as needed */
+  padding: 10px; /* Add some padding to the price */
+  display: inline-block;
+  color: #fff;
+  margin: 0;
+}
+.paket-text {
+  
+  font-size: 1.75em;
+  text-align: left;
+  padding: 15px 45px; 
+  margin-right: 50px;
+  position: relative; 
+  
+}
+.paket-text:last-child{
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.paket-text:first-child{
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.paket-text::before {
+  content: "\2714";
+  color: #0481e1;
+  font-weight: bold;
+  margin-right: 15px;
+  position: absolute; 
+  left: 5px; 
+}
+.paket-hind {
+  font-size: 3.5em;
+  background-color: rgb(26, 129, 254); /* Adjust the alpha value (0.85) as needed */
+  border: 1px solid #777674;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100%;
+  display: inline-block;
+  padding: 10px; /* Add padding to the price container */
+  color: #fff;
+  z-index: 5;
+}
+
+.paket-hind-euro {
+  font-size: 0.65em;
+  display: inline-block;
+  z-index: 5;
+}
+.paket-ending{
+  font-size: 1.5em;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* Add CSS styles to format the product list items */
+#tood {
+  text-align: center;
+  background-color: #f2f3f5;
+}
+.tood-header{
+  padding-top: 30px;
+  font-size: 4.5em;
+  padding-bottom: 45px;
+}
+.tood-sissejuhatus{
+  font-size: 1.5em;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.pricing-table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  margin-bottom: 140px;
+}
+
+
+.table-header th {
+  background-color: #023864;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.table-row td {
+  border: 1px solid #aaaaaa;
+  padding: 10px;
+}
+
+.product-name {
+  width: 30%;
+  font-size: 1.25em;
+}
+
+.product-description {
+  width: 50%;
+  text-align: left;
+  font-size: 1.25em;
+}
+
+.product-price {
+  width: 20%;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+/* Style for alternating row colors */
+.table-row:nth-child(even) {
+  background-color: #02386439;
+}
+
+
+
+
+#meist {
+  background-color: #F1F1F1; /* Or any other color you prefer */
+  padding: 0px;
+  margin: 0px 0;
+  font-size: 2em;
+  background: linear-gradient(rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.7)), url(../images/piltavaleht.jpg);
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.section-header-meist{
+  font-size: 3.5em;
+  background: linear-gradient(to bottom,rgb(0, 0, 0),rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+.meist-header2{
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.text-meist{
+  padding-left: 40px;
+  font-size: 1em;
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  font-weight: 500;
+}
+.text-meist:hover .highlight {
+  color: #0069da;
+  transition: 0.3s ease-in-out;
+}
+.meist-sisene-text{
+  font-size: 0.75em;
+}
+.meist-item:hover {
+  transform: scale(1.10);
+  transition: all 0.9s ease;
+  animation: paint 1s linear infinite;
+  background: linear-gradient(rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.7));
+  border-radius: 20px;
+}
+.meist-item:hover .highlight {
+  color: blue; /* Change to your preferred color */
+  transition: color 0.5s ease
+}
+
+.meist-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.meist-item {
+  width: 24%;
+  text-align: center;
+  font-size: 1em;
+}
+.meist-item:last-child p {
+  padding-right: 30px; /* Adjust as needed */
+}
+.meist-item:last-child {
+  margin-right: 0; /* Reset the margin for the last child */
+}
+
+.meist-item:last-child:hover {
+  margin-right: 25px; /* Increase margin to push it out slightly */
+}
+
+.meist-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1877F2;
+}
+
+.meist-item p {
+  margin-top: 0; /* Remove top margin */
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+/* Additional styles to move the first two items to the left */
+.first-item .meist-icon, .second-item .meist-icon {
+  margin-left: -50px; /* Move a bit to the left */
+}
+
+#teenused {
+  background-color: #F1F1F1;
+  padding: 0px;
+  margin: 0px 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+.teenused-header {
+  font-size: 3.5em;
+  padding: 10px;
+}
+
+.teenused-intro {
+  font-size: 1em;
+  padding: 15px;
+  padding-bottom: 55px;
+}
+
+.services-section {
+  background-color: #F1F1F1;
+  padding: 50px;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.services-flex-container {
+  display: flex;
+  justify-content: center; /* Center the contents horizontally */
+  align-items: center;
+}
+
+.related-content {
+  flex: 1;
+  padding: 10px;
+  text-align: right;
+  margin: 1px;
+}
+#related-image,
+#data-image {
+  height: 500px;
+  width: 500px;
+  margin-top: 10px;
+  text-align: center;
+  padding-bottom: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+#data-description,
+#related-description {
+  width: 425px;
+  height: 325px;
+  margin: 10px;
+  padding-bottom: 400px;
+}
+.highlight1 {
+  color: blue;
+}
+
+.teenused-container {
+  border-radius: 20px;
+  list-style: none;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+.teenused-container:hover{
+  scale: 1.05;
+  transition: 0.3s ease-in-out;
+}
+.teenused-text {
+  padding: 10px;
+}
+
+.teenused-text:hover {
+  color: #1877F2;
+}
+
+.section-header-kontakt{
+  font-size: 40px;
+}
+.text-kontakt{
+  font-size: 30px;
+  padding: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.kontakt-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  padding-bottom: 2px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 25px;
+}
+textarea {
+  resize: none;
+}
+.submit-button-container {
+  display: block;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+
+.tehtud-section {
+  text-align: center;
+}
+
+
+
+
+
+#tehtud {
+  background-color: #b3b3b3;
+  padding: 10px;
+  text-align: center;
+}
+
+.gallery {
+  margin: 2px;
+  transition: 1s;
+}
+.gallery img {
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0 solid #212121;
+  margin: 0;
+  padding: 0;
+  transition: 0.3;
+}
+.gallery img:hover {
+  transform: scale(1.2);
+  transition: 0.7s ease-in-out;
+  border: 2px solid #212121;
+  margin: -4px;
+  padding: 0px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Distribute content evenly along the horizontal axis */
+  align-items: center; /* Center content vertically */
+  padding: 5px; /* Add padding as needed */
+}
+
+.footer-content-left,
+.footer-content-center,
+.footer-content-right {
+  flex: 1; /* Distribute available space evenly among the three columns */
+  text-align: left; /* Align text to the left */
+}
+.footer-content-left {
+  flex: 1;
+  text-align: left;
+  padding: 5px; /* Add any additional styling you need for the left section */
+  font-size: 1.2em;
+}
+
+.footer-content-center {
+  flex: 1;
+  text-align: center;
+  /* Add any additional styling you need for the center section */
+}
+
+.footer-content-right {
+  flex: 1;
+  text-align: right;
+  margin-top: 0px;
+  /* Add any additional styling you need for the right section */
+}
+
+.footer-content-center a {
+  text-decoration: none; /* Remove underline on links */
+  color: white; /* Text color for links */
+  font-size: 1.2em;
+}
+
+.footer-content-center a:hover {
+  border-bottom: 1px solid #ffffff;
+  
+}
+
+.social-media a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 1.4em;
+  display: inline-block;
+}
+.social-media a i {
+  padding-top: 5px;
+  padding-left: 5px;
+  transition: 0.7s ease;
+}
+.social-media .footer-fb-logo:hover {
+  color: #1877F2; /* Facebook color on hover */
+  position: relative;
+  
+}
+.social-media .footer-fb-logo{
+  padding-right: 2px;
+}
+
+/* Hover style for Instagram logo */
+.social-media .footer-ig-logo:hover {
+  color: #d62976; /* Instagram color on hover */
+}
+.text-kaitstud{
+  font-size: 1em;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  color: white;
+}
+@media (min-width: 769px) and (max-width: 1540px){
+  
+}
+@media (min-width:481px) and (max-width:768px){
+  .hamburger{
+    display: block;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #212121;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
+    z-index: 9999;
+  }
+.navbar-item{
+  margin: 16px 0;
+}
+  .navbar-menu.active{
+    left: 0;
+    background-color: #212121;
+    pointer-events: auto;
+   
+  }
+  .fb-logo i.fab.fa-facebook-f,
+  .ig-logo i.fab.fa-instagram {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  
+}
+@media (min-width:320px) and (max-width:480px){
+  .hamburger{
+    display: block;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #212121;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
+    z-index: 1000;
+  }
+.navbar-item{
+  margin: 16px 0;
+}
+  .navbar-menu.active{
+    left: 0;
+    background-color: #212121;
+  }
+  .fb-logo i.fab.fa-facebook-f,
+  .ig-logo i.fab.fa-instagram {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .nav-logo,
+  .nav-logo:hover {
+    font-size: 1.7em !important;
+    text-align: left;
+    margin-left: 0;
+    position: fixed;
+    top: auto;
+    left: 10px;
+    transition: none;
+  }
+  
+}
