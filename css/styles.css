@@ -801,6 +801,12 @@ footer {
     display: block;
     box-sizing: border-box; /* Include padding and border in the element's total width */
   }
+  .avaleht-box:first-child{
+    margin-left: 48px;
+  }
+  .avaleht-box:last-child{
+    margin-right: 48px;
+  }
   .avaleht-header{
     font-size: 4.5vh;
   }
@@ -976,6 +982,12 @@ footer {
     text-align: center;
     border: 1px solid #ddd;
     display: block; /* Stack elements vertically within this width range */
+  }
+  .avaleht-box:first-child{
+    margin-left: 48px;
+  }
+  .avaleht-box:last-child{
+    margin-right: 48px;
   }
   .paket-container {
     width: 100%; 
