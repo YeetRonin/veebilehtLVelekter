@@ -116,6 +116,7 @@ ul {
   top: auto;
   left: 10px;
   transition: 0.7s ease;
+  z-index: 1000;
 }
 .fa-gem {
   margin-right: 0.5em;
@@ -784,7 +785,7 @@ footer {
     position: fixed;
     top: auto;
     left: 10px;
-    transition: none;
+    transition: 0.7s ease;
   }
   #avaleht{
     height: auto;
@@ -1063,7 +1064,7 @@ footer {
     border-collapse: collapse;
     margin: auto auto;
     margin-bottom: 100px;
-    margin-right: 3px;
+    margin-right: 23px;
     margin-left: 3px;
   }
   
