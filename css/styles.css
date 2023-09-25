@@ -1068,7 +1068,7 @@ footer {
 
 
   .pricing-table {
-    width: 75%;
+    width: 85%;
     border-collapse: collapse;
     margin: auto auto;
     margin-bottom: 100px;
@@ -1091,19 +1091,19 @@ footer {
   
   .product-name {
     width: 25%;
-    font-size: 0.75em;
+    font-size: 0.85em;
   }
   
   .product-description {
     width: 35%;
     text-align: left;
-    font-size: 0.75em;
+    font-size: 0.85em;
   }
   
   .product-price {
     width: 10%;
     font-weight: bold;
-    font-size: 0.75em;
+    font-size: 0.85em;
   }
   
   /* Style for alternating row colors */

@@ -17,19 +17,15 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 
 //section jumping through navbar
 
-const navigation =
-    document.querySelector(".primary-navigation")
+document.addEventListener("DOMContentLoaded", function () {
+  const navigation = document.querySelector(".primary-navigation");
+  const navigationHeight = navigation.offsetHeight;
 
-const navigationHeight =
- navigation.offsetHeight;
-
-document.documentElement.style.setProperty(
+  document.documentElement.style.setProperty(
     "--scroll-padding",
     navigationHeight + "px"
-);
-
-
-
+  );
+});
 
 $(document).ready(function() {
     // Initialize Fancybox for the tehtud-link elements
