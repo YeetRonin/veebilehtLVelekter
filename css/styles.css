@@ -118,6 +118,7 @@ ul {
   transition: 0.7s ease;
   z-index: 1000;
 }
+
 .fa-gem {
   margin-right: 0.5em;
 }
@@ -972,6 +973,13 @@ footer {
     top: auto;
     left: 10px;
     transition: ease-in-out 0.7s;
+    animation: hoverReset 1s forwards;
+  }
+  @keyframes hoverReset {
+    100% {
+      font-size: 1.4em;
+      color: white;
+    }
   }
   #avaleht{
     height: auto;
