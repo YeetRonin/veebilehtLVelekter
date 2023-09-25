@@ -975,10 +975,15 @@ footer {
   #avaleht{
     height: auto;
   }
+  .avaleht-header{
+    font-size: 3.5em;
+  }
   .avaleht-box {
-    width: calc(100% - 5px); /* Adjust the width as needed */
+    width: calc(90% - 5px); /* Adjust the width as needed */
     background-color: #f0f0f0;
     margin-bottom: 20px;
+    margin-right: 8px;
+    margin-left: 8px;
     text-align: center;
     border: 1px solid #ddd;
     display: block; /* Stack elements vertically within this width range */
@@ -1054,7 +1059,7 @@ footer {
 
 
   .pricing-table {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
     margin: auto auto;
     margin-bottom: 100px;
