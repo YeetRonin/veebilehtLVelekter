@@ -973,13 +973,6 @@ footer {
     top: auto;
     left: 10px;
     transition: ease-in-out 0.7s;
-    animation: hoverReset 1s forwards;
-  }
-  @keyframes hoverReset {
-    100% {
-      font-size: 1.4em;
-      color: white;
-    }
   }
   #avaleht{
     height: auto;
@@ -1091,19 +1084,19 @@ footer {
   
   .product-name {
     width: 25%;
-    font-size: 0.85em;
+    font-size: 0.88em;
   }
   
   .product-description {
     width: 35%;
     text-align: left;
-    font-size: 0.85em;
+    font-size: 0.88em;
   }
   
   .product-price {
     width: 10%;
     font-weight: bold;
-    font-size: 0.85em;
+    font-size: 0.88em;
   }
   
   /* Style for alternating row colors */
