@@ -982,17 +982,17 @@ footer {
     width: calc(90% - 5px); /* Adjust the width as needed */
     background-color: #f0f0f0;
     margin-bottom: 20px;
-    margin-right: 8px;
-    margin-left: 8px;
+    margin-right: 20px;
+    margin-left: 20px;
     text-align: center;
     border: 1px solid #ddd;
     display: block; /* Stack elements vertically within this width range */
   }
   .avaleht-box:first-child{
-    margin-left: 8px;
+    margin-left: 20px;
   }
   .avaleht-box:last-child{
-    margin-right: 8px;
+    margin-right: 20px;
   }
   .paket-container {
     width: 100%; 
@@ -1059,7 +1059,7 @@ footer {
 
 
   .pricing-table {
-    width: 90%;
+    width: 80%;
     border-collapse: collapse;
     margin: auto auto;
     margin-bottom: 100px;
