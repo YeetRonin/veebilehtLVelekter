@@ -908,7 +908,8 @@ footer {
     padding-bottom: 20px;
   }
   .text-meist{
-    padding-left: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 1em;
     text-align: left;
     padding-bottom: 20px;
@@ -1064,29 +1065,29 @@ footer {
     background-color: #023864;
     color: #fff;
     font-weight: bold;
-    padding: 10px;
+    padding: 5px;
   }
   
   .table-row td {
     border: 1px solid #aaaaaa;
-    padding: 10px;
+    padding: 5px;
   }
   
   .product-name {
     width: 30%;
-    font-size: 1.25em;
+    font-size: 1em;
   }
   
   .product-description {
     width: 40%;
     text-align: left;
-    font-size: 1.25em;
+    font-size: 1em;
   }
   
   .product-price {
     width: 10%;
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: 1em;
   }
   
   /* Style for alternating row colors */
