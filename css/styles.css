@@ -971,7 +971,7 @@ footer {
     position: fixed;
     top: auto;
     left: 10px;
-    transition: none;
+    transition: ease-in-out 0.7s;
   }
   #avaleht{
     height: auto;
