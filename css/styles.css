@@ -1099,4 +1099,12 @@ footer {
   .table-row:nth-child(even) {
     background-color: #02386439;
   }
+  .text-meist{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1em;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
 }
