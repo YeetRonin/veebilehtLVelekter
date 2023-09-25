@@ -230,7 +230,7 @@ ul {
   max-width: 2800px;
   background-color: #ededed;
   width: 100%;
-  min-height: 100vh; /* Use min-height to ensure it takes the full height */
+  min-height: auto; /* Use min-height to ensure it takes the full height */
 }
 .paket-header{
   font-size: 4.5em;
@@ -238,6 +238,14 @@ ul {
   text-align: center;
   width: 100%;
   padding-bottom: 40px;
+}
+.paket-container:last-of-type .paket-heading {
+  font-size: 3em;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.paket-container:last-of-type .paket-text {
+  padding-bottom: 9px;
 }
 .paket-container {
   width: 32%; /* Set the width to 22% */
