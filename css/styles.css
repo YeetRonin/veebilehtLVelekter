@@ -1059,7 +1059,7 @@ footer {
 
 
   .pricing-table {
-    width: 80%;
+    width: 75%;
     border-collapse: collapse;
     margin: auto auto;
     margin-bottom: 100px;
@@ -1079,12 +1079,12 @@ footer {
   }
   
   .product-name {
-    width: 30%;
+    width: 25%;
     font-size: 1em;
   }
   
   .product-description {
-    width: 40%;
+    width: 35%;
     text-align: left;
     font-size: 1em;
   }
