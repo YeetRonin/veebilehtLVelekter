@@ -69,6 +69,11 @@ ul {
   width: 100%; /* Make sure the container takes up the full width */
   max-width: 100%;
 }
+.text-teenused-hind{
+  font-size: 2em !important;
+  font-weight: normal;
+  text-align: center;
+}
 .avaleht-box:hover .highlight-teenused {
   color: #1877F2;
 }
