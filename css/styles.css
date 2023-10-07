@@ -1086,19 +1086,19 @@ footer {
   
   .product-name {
     width: 25%;
-    font-size: 0.88em;
+    font-size: 0.78em;
   }
   
   .product-description {
-    width: 35%;
+    width: 25%;
     text-align: left;
-    font-size: 0.88em;
+    font-size: 0.78em;
   }
   
   .product-price {
-    width: 10%;
+    width: 5%;
     font-weight: bold;
-    font-size: 0.88em;
+    font-size: 0.78em;
   }
   
   /* Style for alternating row colors */
