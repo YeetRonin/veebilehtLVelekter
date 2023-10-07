@@ -922,7 +922,7 @@ footer {
     font-weight: 500;
   }
 }
-@media (min-width:320px) and (max-width:480px){
+@media (min-width:260px) and (max-width:480px){
   .hamburger{
     display: block;
     top: 10px;
