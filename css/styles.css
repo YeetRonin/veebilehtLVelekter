@@ -1050,10 +1050,10 @@ footer {
   }
   #meist {
     background-color: #F1F1F1; /* Or any other color you prefer */
-    padding: 0px;
+    padding: 5px;
     margin: 0px 0;
     font-size: 1.5em;
-    background: linear-gradient(rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.7)), url(../images/piltavaleht.jpg);
+    background: linear-gradient(rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.7));
     background-size: cover;
     padding-bottom: 50px;
   }
