@@ -238,7 +238,7 @@ ul {
 #paket {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   margin: 0;
   padding: 40px;
@@ -254,22 +254,16 @@ ul {
   width: 100%;
   padding-bottom: 40px;
 }
-.paket-container:last-of-type .paket-heading {
-  font-size: 3em;
-  padding-bottom: 50px;
-  padding-top: 20px;
-}
-.paket-container:last-of-type .paket-text {
-  padding-bottom: 9px;
-}
+
+
 .paket-container {
-  width: 32%; /* Set the width to 22% */
+  width: calc(32% - 20px); 
   background-color: rgb(224, 224, 224);
   background-image: url(../images/background-lightning.jpg);
   background-blend-mode: multiply;
   background-size: cover;
   border-radius: 5px;
-  margin: 0; /* Set margin to 0 to eliminate extra spacing */
+  margin: 0 10px; /* Set margin to 0 to eliminate extra spacing */
   text-align: center;
   border: 1px solid #ddd;
   display: flex;
@@ -279,6 +273,7 @@ ul {
   z-index: 1;
   transition: 0.7s ease-in-out;
   position: relative;
+  height: 100%;
 }
 
 .paket-container::before {
@@ -294,6 +289,10 @@ ul {
   pointer-events: none;
 }
 
+.paket-container:nth-child(2) .paket-text:last-child,
+.paket-container:nth-child(3) .paket-text:last-child {
+  padding-bottom: 145px;
+}
 
 
 .paket-box h2 {
@@ -317,9 +316,10 @@ ul {
   margin: 0;
   padding: 10px;
 }
-.paket-heading:last-child {
-  margin-bottom: 300px;
+.paket-heading-last{
+  padding-bottom: 65px;
 }
+
 .paket-hind {
   font-size: 3.5em;
   background-color: #0056b3;
@@ -434,18 +434,6 @@ ul {
   background-color: #02386439;
 }
 
-
-
-
-#meist {
-  background-color: #F1F1F1; /* Or any other color you prefer */
-  padding: 0px;
-  margin: 0px 0;
-  font-size: 2em;
-  background: linear-gradient(rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.7)), url(../images/piltavaleht.jpg);
-  background-size: cover;
-  padding-bottom: 50px;
-}
 .section-header-meist{
   font-size: 3.5em;
   background: linear-gradient(to bottom,rgb(0, 0, 0),rgb(0, 0, 0));
@@ -478,6 +466,7 @@ ul {
   animation: paint 1s linear infinite;
   background: linear-gradient(rgba(241, 241, 241, 0.7), rgba(241, 241, 241, 0.7));
   border-radius: 20px;
+  
 }
 .meist-item:hover .highlight {
   color: blue; /* Change to your preferred color */
@@ -486,23 +475,13 @@ ul {
 
 .meist-container {
   display: flex;
-  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .meist-item {
   width: 24%;
   text-align: center;
-  font-size: 1em;
-}
-.meist-item:last-child p {
-  padding-right: 30px; /* Adjust as needed */
-}
-.meist-item:last-child {
-  margin-right: 0; /* Reset the margin for the last child */
-}
-
-.meist-item:last-child:hover {
-  margin-right: 25px; /* Increase margin to push it out slightly */
+  font-size: 1.3em;
 }
 
 .meist-icon {
@@ -517,7 +496,9 @@ ul {
   padding-left: 30px;
   padding-top: 20px;
 }
-
+.meist-sisene-text-list{
+  font-size: 0.75em;
+}
 /* Additional styles to move the first two items to the left */
 .first-item .meist-icon, .second-item .meist-icon {
   margin-left: -50px; /* Move a bit to the left */
@@ -871,7 +852,6 @@ footer {
   .meist-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   
   .meist-item {
@@ -1035,7 +1015,6 @@ footer {
   .meist-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   
   .meist-item {
